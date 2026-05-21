@@ -1,5 +1,4 @@
-import './style.css';
-import './animations.css';
+// Styles are loaded via <link> tags in the HTML for static deployment.
 
 document.addEventListener('DOMContentLoaded', () => {
   
@@ -445,7 +444,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initModulesCarousel();
 
   // 10. 3D TILT EFFECT ON HOVER
-  const tiltCards = document.querySelectorAll('.tilt-card, .module-new-card, .testimonial-card');
+  const tiltCards = document.querySelectorAll('.tilt-card, .module-new-card, .testimonial-card, .what-we-do-card:not(.what-we-do-impact-card)');
   tiltCards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const cardRect = card.getBoundingClientRect();
@@ -459,7 +458,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const tiltX = (mouseY / (cardHeight / 2)) * -maxTilt;
       const tiltY = (mouseX / (cardWidth / 2)) * maxTilt;
       
-      card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.015, 1.015, 1.015)`;
+      const isWhatWeDo = card.classList.contains('what-we-do-card');
+      const translateY = isWhatWeDo ? 'translateY(-8px) ' : '';
+      
+      card.style.transform = `perspective(1000px) ${translateY}rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.015, 1.015, 1.015)`;
       card.style.transition = 'transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
     });
     

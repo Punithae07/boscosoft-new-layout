@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- Styles (static) -->
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/animations.css" />
+    
     <!-- Primary SEO Metadata -->
     <title>Boscosoft | Global AI & Digital Transformation Partner</title>
     <meta name="description" content="Boscosoft helps organizations build AI-ready platforms, integrate systems, and modernize operations through cloud-native SaaS ecosystems and premium IT transformation services." />
@@ -15,7 +19,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Boscosoft | Global AI & Digital Transformation Partner" />
     <meta property="og:description" content="Build AI-ready platforms, connected systems, and scalable digital ecosystems. Trusted by 2,600+ institutions globally." />
-    <meta property="og:image" content="/images/og-image.jpg" />
+content="/boscosoft-new-layout/public/images/og-image.jpg"
     
     <!-- Structured Data (Organization Schema) -->
     <script type="application/ld+json">
@@ -50,7 +54,7 @@
     <header class="header" id="header">
       <div class="container navbar">
         <a href="/" class="logo-container" aria-label="Boscosoft Home">
-          <img src="/images/bosco-logo.png" alt="BoscoSoft Technologies" class="logo-img" />
+<img src="/boscosoft-new-layout/public/images/bosco-logo.png" alt="BoscoSoft Technologies" class="logo-img" />
         </a>
         
         <nav aria-label="Main Navigation">
@@ -403,7 +407,7 @@
                     </div>
                     <div class="dash-user">
                       <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-                      <div class="user-avatar" style="background-image: url('/images/Fr Thaddeus.avif'); background-size: cover; background-position: center;"></div>
+url('public/images/Fr Thaddeus.avif')
                     </div>
                   </div>
                   <div class="dash-grid">
@@ -559,101 +563,111 @@
       <!-- SECTION 4: WHAT WE DO (CAPABILITY GRID) -->
       <section class="what-we-do-section" id="services">
         <div class="bg-mesh"></div>
-        <div class="container">
-          <div class="section-header-center reveal">
-            <span class="section-label">What We Do</span>
-            <h2>Complete tech capability, engineered for growth.</h2>
-            <p>We build, modernize, and manage organizational technology. Explore how our cloud-native platforms and services support your scaling trajectory.</p>
-          </div>
-          
-          <div class="capability-grid">
-            <div class="capability-card reveal border-beam">
-              <div class="capability-card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
-              </div>
-              <h3 class="capability-card-title">AI Transformation</h3>
-              <p class="capability-card-desc">Automate core business processes, deploy local LLMs, and structure intelligent data parsing agents to optimize operations.</p>
-              <a href="/services/ai-transformation-automation/index.html" class="capability-card-tag">
-                Learn More 
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <div class="container what-we-do-container">
+          <div class="what-we-do-grid">
+            
+            <!-- CARD 0: TITLE BLOCK -->
+            <div class="what-we-do-title-card reveal">
+              <span class="eyebrow-badge">What We Do</span>
+              <h2 class="what-we-do-heading">Building Digital Products & Platforms <span class="highlight-blue">People Love</span></h2>
+              <p class="what-we-do-desc">We partner with forward-thinking organizations to build impactful AI systems, integrated digital ecosystems, and scalable SaaS solutions.</p>
+              <a href="/services/index.html" class="btn-explore-services">
+                Explore All Services 
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
 
-            <div class="capability-card reveal border-beam">
-              <div class="capability-card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <!-- CARD 1: AI TRANSFORMATION -->
+            <div class="what-we-do-card reveal reveal-delay-1 border-beam">
+              <div class="card-image-container bg-theme-blue">
+                <div class="card-logo">b.ai</div>
+                <div class="card-headline">Automating Tomorrow, Today.</div>
+                <div class="card-mockup-wrapper">
+src="public/images/ai_transform_card.png"
+                </div>
               </div>
-              <h3 class="capability-card-title">Digital Ecosystems</h3>
-              <p class="capability-card-desc">Connect ERPs, CRM platforms, customer portals, and internal workflows via robust, secure API layers.</p>
-              <a href="/services/integration-digital-ecosystems/index.html" class="capability-card-tag">
-                Learn More 
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+              <div class="card-content-bottom">
+                <h3 class="card-title">AI Transformation</h3>
+                <span class="card-subtitle">AI & Automation</span>
+              </div>
             </div>
 
-            <div class="capability-card reveal border-beam">
-              <div class="capability-card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            <!-- CARD 2: DIGITAL ECOSYSTEMS -->
+            <div class="what-we-do-card reveal reveal-delay-2 border-beam">
+              <div class="card-image-container bg-theme-dark-slate">
+                <div class="card-logo">b.link</div>
+                <div class="card-headline">Connect Everything.</div>
+                <div class="card-mockup-wrapper">
+                  <img src="/images/ecosystems_card.png" alt="Digital Ecosystems Mockup" class="card-mockup-img" />
+                </div>
               </div>
-              <h3 class="capability-card-title">SaaS Platforms</h3>
-              <p class="capability-card-desc">Implement, scale, and customize ready-to-run SaaS platforms built for schools, hospitals, microfinance, and compliance.</p>
-              <a href="#platforms" class="capability-card-tag">
-                Learn More 
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+              <div class="card-content-bottom">
+                <h3 class="card-title">Digital Ecosystems</h3>
+                <span class="card-subtitle">API & Integration</span>
+              </div>
             </div>
 
-            <div class="capability-card reveal border-beam">
-              <div class="capability-card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <!-- CARD 3: SAAS PLATFORMS -->
+            <div class="what-we-do-card reveal reveal-delay-3 border-beam">
+              <div class="card-image-container bg-theme-light-grey">
+                <div class="card-logo">b.saas</div>
+                <div class="card-headline">Scalable Multi-Tenant Platforms.</div>
+                <div class="card-mockup-wrapper">
+                  <img src="/images/saas_platforms_card.png" alt="SaaS Platforms Mockup" class="card-mockup-img" />
+                </div>
               </div>
-              <h3 class="capability-card-title">ERP & CRM Implementation</h3>
-              <p class="capability-card-desc">Set up Microsoft Dynamics 365, Odoo, and Frappe/ERPNext environments optimized for compliance and complex books.</p>
-              <a href="/services/erp-crm-platform-implementation/index.html" class="capability-card-tag">
-                Learn More 
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+              <div class="card-content-bottom">
+                <h3 class="card-title">SaaS & Domain Platforms</h3>
+                <span class="card-subtitle">Custom SaaS Engineering</span>
+              </div>
             </div>
 
-            <div class="capability-card reveal border-beam">
-              <div class="capability-card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            <!-- CARD 4: ERP & CRM IMPLEMENTATION -->
+            <div class="what-we-do-card reveal reveal-delay-1 border-beam">
+              <div class="card-image-container bg-theme-slate-grey">
+                <div class="card-logo">b.erp</div>
+                <div class="card-headline">Compliance & Growth Aligned.</div>
+                <div class="card-mockup-wrapper">
+                  <img src="/images/erp_crm_card.png" alt="ERP & CRM Mockup" class="card-mockup-img" />
+                </div>
               </div>
-              <h3 class="capability-card-title">Data, Analytics & AI</h3>
-              <p class="capability-card-desc">Establish secure Databricks storage, build business intelligence dashboards, and extract real-time data trends.</p>
-              <a href="/services/data-analytics-ai/index.html" class="capability-card-tag">
-                Learn More 
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+              <div class="card-content-bottom">
+                <h3 class="card-title">ERP & CRM Implementation</h3>
+                <span class="card-subtitle">Enterprise Systems</span>
+              </div>
             </div>
 
-            <div class="capability-card reveal border-beam">
-              <div class="capability-card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M6.34 17.66l2.83-2.83M14.83 9.17l2.83-2.83"/></svg>
+            <!-- CARD 5: DATA, ANALYTICS & AI -->
+            <div class="what-we-do-card reveal reveal-delay-2 border-beam">
+              <div class="card-image-container bg-theme-sky-blue">
+                <div class="card-logo">b.data</div>
+                <div class="card-headline">Insights that Drive Growth.</div>
+                <div class="card-mockup-wrapper">
+                  <img src="/images/ecommerce-analytics.jpg" alt="Data & Analytics Mockup" class="card-mockup-img" />
+                </div>
               </div>
-              <h3 class="capability-card-title">Cloud Infrastructure</h3>
-              <p class="capability-card-desc">Deploy workloads on Azure, monitor server structures, guarantee data backups, and configure local clusters.</p>
-              <a href="/services/cloud-infrastructure-support/index.html" class="capability-card-tag">
-                Learn More 
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+              <div class="card-content-bottom">
+                <h3 class="card-title">Data, Analytics & AI</h3>
+                <span class="card-subtitle">Business Intelligence</span>
+              </div>
             </div>
 
-            <div class="capability-card reveal border-beam" style="grid-column: span 1;">
-              <div class="capability-card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <!-- CARD 6: CLOUD INFRASTRUCTURE -->
+            <div class="what-we-do-card reveal reveal-delay-3 border-beam">
+              <div class="card-image-container bg-theme-teal-gradient">
+                <div class="card-logo">b.cloud</div>
+                <div class="card-headline">Secured, Scalable, 24/7.</div>
+                <div class="card-mockup-wrapper">
+                  <img src="/images/cloud-security.jpg" alt="Cloud Infrastructure Mockup" class="card-mockup-img" />
+                </div>
               </div>
-              <h3 class="capability-card-title">Domain Platforms</h3>
-              <p class="capability-card-desc">Optimize systems customized for highly specialized domains such as K-12 EdTech, healthcare, microfinance, and audit.</p>
-              <a href="#platforms" class="capability-card-tag">
-                Learn More 
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+              <div class="card-content-bottom">
+                <h3 class="card-title">Cloud Infrastructure</h3>
+                <span class="card-subtitle">Azure & Cloud DevOps</span>
+              </div>
             </div>
-          </div>
-          
-          <div class="what-actions reveal">
-            <a href="/services/index.html" class="btn btn-outline">Explore Our Services Overview</a>
+
+            <!-- CARD 7 removed: impact card deleted per request -->
           </div>
         </div>
       </section>
@@ -1736,7 +1750,7 @@
           
           <div class="footer-brand">
             <a href="/" class="logo-container" style="align-self: flex-start;">
-              <img src="/images/bosco-logo.png" alt="Boscosoft Logo" class="logo-img" style="filter: brightness(0) invert(1); height: 40px; width: auto;" />
+src="images/bosco-logo.png"
             </a>
             <p class="footer-brand-desc">
               Global AI & Digital Transformation Partner delivering cloud-native SaaS systems, database integrations, and long-term tech support.
@@ -1817,6 +1831,8 @@
     </footer>
 
     <!-- MODULE SCRIPTS -->
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
+<script type="module" src="src/main.js"></script>
+</body>
 </html>

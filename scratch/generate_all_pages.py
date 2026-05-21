@@ -2,7 +2,7 @@ import os
 import re
 
 # Paths
-workspace_dir = r"c:\Users\SANJI BI\OneDrive\Documents\bosccosoftlayout_final"
+workspace_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 index_path = os.path.join(workspace_dir, "index.html")
 
 # Read index.html to extract header and footer
